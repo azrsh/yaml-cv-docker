@@ -2,7 +2,7 @@
 
 How to run:
 ```bash
-$ sudo docker run --rm \
+$ docker run --rm \
   --volume "$(pwd):/data" \
   --volume "$(pwd)/fonts:/usr/app/fonts" \
   ghcr.io/azarashi2931/yaml-cv:latest \
