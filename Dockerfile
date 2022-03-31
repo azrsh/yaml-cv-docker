@@ -1,11 +1,10 @@
-FROM ruby:3.0.1-alpine3.13
+FROM ruby:3.1.1-slim-bullseye
 
-COPY Gemfile /usr/app/
 WORKDIR /usr/app
-RUN bundle install
 
 RUN apk --update --no-cache add git &&\
     git clone --depth 1 https://github.com/kaityo256/yaml_cv.git &&\
     apk del --purge git
+RUN bundle install
 
 ENTRYPOINT ["ruby", "yaml_cv/make_cv.rb"]
