@@ -1,4 +1,4 @@
-FROM ruby:3.1.3-slim-bullseye@sha256:30b4cd94bde74b6e8306eaa89d5c0778a8309e3a16211cadd189a42f5c2fa116
+FROM ruby:3.1.3-slim-bullseye@sha256:45b2e374efb30a372763279c7c8a0b5947fa469a61e6fe0c615f8a9bb4461c6e
 
 WORKDIR /usr
 RUN apt-get update && apt-get install -y git &&\
