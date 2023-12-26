@@ -1,4 +1,4 @@
-FROM ruby:3.2.2-slim-bullseye as base
+FROM ruby:3.3.0-slim-bullseye as base
 ENV BUNDLE_DEPLOYMENT=true
 
 FROM base as builder
